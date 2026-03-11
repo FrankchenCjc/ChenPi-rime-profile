@@ -1,0 +1,11 @@
+customization:
+  distribution_code_name: trime
+  distribution_version: "v3.3.4-0-g5ec15ed0"
+  generator: "Rime::SwitcherSettings"
+  modified_time: "Sat Jul  5 20:09:49 2025"
+  rime_version: 1.13.1
+patch:
+  "menu/page_size": 6
+  schema_list:
+    - {schema: zrm2000}
+    - {schema: luna_pinyin}

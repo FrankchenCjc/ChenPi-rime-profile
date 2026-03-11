@@ -1,0 +1,16 @@
+customization:
+  distribution_code_name: Weasel
+  distribution_version: 0.17.4
+  generator: "Weasel::UIStyleSettings"
+  modified_time: "Wed Mar 11 14:53:36 2026"
+  rime_version: 1.13.1
+patch:
+  style/+:
+    color_scheme: steam
+    font_point: 12
+    font_face: "Noto Sans Mono CJK SC,Mono Sans"
+  style/layout+:
+    corner_radius: 0
+    border_width: 0 
+    margin_x: 0
+    margin_y: 0
