@@ -1,0 +1,4 @@
+#Custom File Create By RimeControl On 2026-03-18 10:07:44
+#如果修改，请认真阅读 Rime定製指南 https://github.com/rime/home/wiki/CustomizationGuide 的要求！！
+patch: 
+  "translator/enable_correction": true

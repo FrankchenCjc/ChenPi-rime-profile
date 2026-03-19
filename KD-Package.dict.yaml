@@ -1,0 +1,72 @@
+# KD-Package.dict.yaml
+# Rime dictionary
+# encoding: utf-8
+#
+---
+name: KD-Package
+version: "0.2"
+sort: original
+use_preset_vocabulary: true
+...
+
+台套	tltk
+拉杆	lagj
+EVA	eva
+翼子板	yizibj
+前围	qmwz
+后围	hbwz
+侧围	cewz
+顶盖	dygl
+保险杠	bkxmg
+消音器	xcugq
+仪表台	yibctl
+总成	zsig
+水切	uvqx
+内饰板	nzuibj
+前挡	qmdh
+前挡风	qmdhfg
+后挡	hbdh
+后挡风	hbdhfg
+底板	dibj
+边板	bmbj
+尾板	wzbj
+捆扎带	kpvadl
+缠绕膜	ijrkmo
+前悬	qmxr
+后悬	hbxr
+EPE	epe
+EPS	eps
+使用气泡膜缠绕 uyqp
+散热器	sjreqi
+散热器带电子风扇	sjreqid
+陈嘉成	ifjwig
+指导书	vidkuu
+辅材	fucl
+方管 fhgr
+矩形管	juxygr
+M型材	mxycl
+U型材	uxycl
+C型材	cxycl
+竖孔	uuks
+横孔	hgks
+角码	jcma
+包胶	bkjc
+PVC	pvc
+投图 tbtu
+出图 tbtu
+投图 iutu
+出图 iutu
+打包带	dabkdl
+打包扣	dabkkb
+鑫源	xnyr
+岚图	ljtu
+发柜	fagv
+大箱号	daxdhk
+包角	bkjc
+脚钉	jcdy
+自攻钉	zigsdy
+防锈袋	fhxqdl
+高柜	gkgv
+矮柜	aigv
+GP	aigv
+HQ	gkgv

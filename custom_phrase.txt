@@ -78,3 +78,5 @@ PVC	pvc
 岚图	ljtu
 发柜	fagv
 大箱号	daxdhk
+包角	bkjc
+脚钉	jcdy
