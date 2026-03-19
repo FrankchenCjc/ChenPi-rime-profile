@@ -7,11 +7,11 @@ schema:
   name: "自然码辅码版"
   version: "2009新春版"
   author:
-    - 发明人: 周志农 先生
-  description: |
-    描　述: 自然码输入系统2000, 2009新春版
-    码　表: 《自然码2009新春版》V7.27
-    网　址: http://www.zrm.com.cn/
+    - 发明人: "周志农 先生"
+  description: 
+    描　述: "自然码输入系统2000, 2009新春版"
+    码　表: "《自然码2009新春版》V7.27"
+    网　址: "http://www.zrm.com.cn/"
 
 
 
