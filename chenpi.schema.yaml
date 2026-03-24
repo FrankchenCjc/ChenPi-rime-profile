@@ -1,0 +1,91 @@
+﻿# Rime schema settings
+# vim: set sw=2 sts=2 et:
+# encoding: utf-8
+
+schema:
+  schema_id: chenpi
+  name: "陈皮檀香自用输入法方案"
+  version: "0.0.1"
+  author:
+  description: "这就是一个我自用的输入法方案，使用ZRM2000，英语，日语，以及一些我自己用的到的词汇集合"
+
+switches:
+  - name: ascii_mode
+    reset: 0
+    states: [中文, 西文]
+  - name: full_shape
+    states: [半角, 全角]
+  - name: simplification
+    states: [漢字, 汉字]
+  - name: ascii_punct
+    states: [。，, ．，]
+
+engine:
+  processors:
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - echo_translator
+    - punct_translator
+    - table_translator@english
+    - table_translator@custom_phrase
+    - table_translator@zrm2000.idioms
+    - table_translator
+    - reverse_lookup_translator
+  filters:
+    - simplifier
+    - uniquifier
+    - reverse_lookup_filter
+
+speller:
+  alphabet: ",.abcdefghijklmnopqrstuvwxyz"
+  initials: "abcdefghijklmnopqrstuvwxyz"
+  delimiter: " '"
+  max_code_length: 6
+
+translator:
+  dictionary: chenpi
+
+english:
+  dictionary: english
+  enable_completion: true
+  enable_sentence: true
+
+custom_phrase:
+  dictionary: ""
+  user_dict: custom_phrase
+  db_class: stabledb
+  enable_completion: false
+  enable_sentence: false
+  initial_quality: 1
+punctuator:
+  import_preset: default
+
+key_binder:
+  import_preset: default
+  bindings:
+    # has_menu 对应有候选词的条件
+    # paging   对应已经有翻页动作的条件
+    - { when: has_menu, accept: semicolon, send: 2 } # 第2候选键(;)
+    - { when: has_menu, accept: apostrophe, send: 3 } # 第3候选键(')
+    #- { when: has_menu, accept: minus, send: Page_Up }          # 前翻页键(-):定义has_menu而非paging.候选首页未后移/后翻,确保前翻页键无动作
+    #- { when: has_menu, accept: equal, send: Page_Down }        # 后翻页键(=)
+    - { when: has_menu, accept: comma, send: Page_Up } # 前翻页键([):定义has_menu而非paging.候选首页未后移/后翻,确保前翻页键无动作
+    - { when: has_menu, accept: period, send: Page_Down } # 后翻页键(])
+    #- { when: has_menu, accept: comma, send: comma }            # 屏蔽default.yaml定义的前翻键(,)
+    #- { when: has_menu, accept: period, send: period }          # 屏蔽default.yaml定义的后翻键(.)
+
+recognizer:
+  import_preset: default

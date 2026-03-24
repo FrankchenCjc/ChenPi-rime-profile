@@ -1,13 +1,15 @@
-customization: 
+customization:
   distribution_code_name: trime
   distribution_version: "v3.3.4-0-g5ec15ed0"
   generator: "Rime: :SwitcherSettings"
   modified_time: "Sat Jul  5 20: 09:49 2025"
   rime_version: 1.13.1
-patch: 
+patch:
   "menu/page_size": 3
-  schema_list: 
+  schema_list:
+    - schema: chenpi
     - schema: zrm2000
+    - schema: 479k_english
   "ascii_composer/good_old_caps_lock": true
   "ascii_composer/switch_key/Caps_Lock": clear
   "ascii_composer/switch_key/Control_L": noop
@@ -16,7 +18,7 @@ patch:
   "ascii_composer/switch_key/Shift_L": inline_ascii
   "ascii_composer/switch_key/Shift_R": commit_text
   "switcher/caption": "方案=>"
-  "switcher/hotkeys": 
+  "switcher/hotkeys":
     - Control+grave
     - Control+Shift+grave
     - F4
