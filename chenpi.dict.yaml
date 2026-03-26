@@ -1,0 +1,16 @@
+# zrm2000.dict.yaml
+# Rime dictionary
+# encoding: utf-8
+#
+# 此文件仅仅作为引用
+---
+name: chenpi
+version: "陈皮个人引用目录"
+sort: original
+
+import_tables:
+  - zrm2000
+  - KD-Package
+  - 479k_english
+  - nihongo-r
+...
